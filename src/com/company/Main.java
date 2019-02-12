@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Task 1");
-        String[] emails = {"test.email+alex@test.com", "test.e.mail+bob.cathy@test.com", "testemail+david@lee.test.com"};
+        String[] emails = {"test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"};
         System.out.println(numUniqueEmails(emails));
         System.out.println("Task 2");
         String[] words = {"gin", "zen", "gig", "msg"};
@@ -40,7 +40,7 @@ public class Main {
             StringBuilder str = new StringBuilder(emails[i]);
             String s=emails[i];
             int count = 0;
-            for (int j = 0; j < s.length(); j++) {
+            for (int j = 0; j < s.indexOf("@"); j++) {
                 if (s.charAt(j)=='.'){
                     count++;
                 }
